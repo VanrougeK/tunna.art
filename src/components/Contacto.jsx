@@ -16,7 +16,7 @@ export default function Contacto() {
     borderRadius: "12px",
     padding: "0.5rem 1rem",
     fontSize: "0.75rem",
-    color: "a070c0",
+    color: "#a070c0",
     outline: "none",
     width: "100%",
   };
@@ -36,13 +36,13 @@ export default function Contacto() {
 
       <form
         onSubmit={handleSubmit}
-        className="rounded-2xl p-8"
+        className="rounded-2xl p-8 max-w-3xl flex flex-col gap-5"
         style={{ background: "rgba(255, 255, 255, 0.4)" }}
       >
         <div className="grid grid-cols-2 gap-6">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             <label
-              className="text-xs font-bold mb-2 block"
+              className="text-xs font-bold"
               style={{ color: "#a070c0" }}
             >
               Correo electronico:
@@ -57,14 +57,19 @@ export default function Contacto() {
             />
           </div>
 
-          <div>
+          <div className="flex flex-col gap-2">
             <label
-              className="text-xs font-bold mb-2 block"
+              className="text-xs font-bold"
               style={{ color: "#a070c0" }}
             >
               Servicio:
             </label>
-            <select name="service" value={form.service} onChange={handleChange}>
+            <select
+              name="service"
+              value={form.service}
+              onChange={handleChange}
+              style={inputStyle}
+            >
               <option value="">Opciones</option>
               <option value="op1">Icono de perfil</option>
               <option value="op2">Banner</option>
@@ -74,17 +79,36 @@ export default function Contacto() {
           </div>
         </div>
 
-        <div>
-          <label>Detalles del contacto:</label>
+        <div className="flex flex-col gap-2">
+          <label
+            className="text-xs font-bold"
+            style={{ color: "#a070c0" }}
+          >
+            Detalles del contacto:
+          </label>
           <textarea
             name="details"
             value={form.details}
             onChange={handleChange}
             placeholder="Detalles del servicio a solicitar"
+            rows={5}
+            style={{ ...inputStyle, resize: "none" }}
           ></textarea>
-          <button type="submit">Confirmar solicitud</button>
+
+          <div className="flex justify-end">
+            <button
+              className="text-xs font-bold px-5 py-2 rounded-full"
+              style={{
+                background: "#ff6eb4",
+                color: "#fff",
+                whiteSpace: "nowrap",
+              }}
+              type="submit"
+            >
+              Confirmar solicitud
+            </button>
+          </div>
         </div>
-        
       </form>
     </section>
   );
