@@ -1,17 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from "react";
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Servicios from "./components/Servicios";
+import Galeria from "./components/Galeria";
+import Contacto from "./components/Contacto";
+import Experiencia from "./components/Experiencia";
+import Juego from "./components/juego";
 
-function App() {
+export default function App() {
+
   return (
-    <div className="h-screen flex items-center justify-center bg-black">
-      <h1 className="text-6xl text-pink-500 font-bold">
-        tunna.art
-      </h1>
-    </div>
-  )
-}
+    <div className="bg-red-500 text-white p-4">
+      <Navbar />
 
-export default App
+        <Hero />
+        <Juego />
+        <Galeria />
+        <Experiencia />
+        <Servicios />
+        <Contacto />
+    </div>
+  );
+}
