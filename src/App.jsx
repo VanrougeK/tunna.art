@@ -6,7 +6,7 @@ import Servicios from "./components/Servicios";
 import Galeria from "./components/Galeria";
 import Contacto from "./components/Contacto";
 import Experiencia from "./components/Experiencia";
-import Juego from "./components/juego";
+import Juego from "./components/Juego";
 
 export default function App() {
 
