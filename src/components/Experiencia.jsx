@@ -4,7 +4,7 @@ import React from "react";
 export default function Experiencia() {
   const software = [
     { id: 1, name: "Ibis Paint X", img: "public/img/ibis-paint-x_logo.png" },
-    { id: 2, name: "Clip Paint Studio", img: "public/img/Clipstudiopaint_logo.png" },
+    { id: 2, name: "Clip Paint Studio", img: "/Clipstudiopaint_logo.png" },
     { id: 3, name: "Blender", img: "public/img/blender_logo.png" },
   ];
 
