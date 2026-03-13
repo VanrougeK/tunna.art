@@ -3,15 +3,15 @@ import React from "react";
 export default function Hero() {
   return (
     <section
-      className="flex justify-between items-center px-12 py-10 min-h-64"
+      className=" relative flex flex-col md:flex-row justify-between items-center px-6 md:px-16 min-h-screen gap-8 overflow-hidden"
       style={{
         background:
           "linear-gradient(135deg, #ffb3d9, #c9b3ff, #b3d9ff, #b3ffda)",
       }}
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col items-center md:items-start text-center md:text-left z-10 gap-4">
         <h1
-          className="text-7xl font-bold"
+          className="text-5xl md:text-8xl font-bold"
           style={{
             color: "#ff6eb4",
             textShadow: "3px 3px 0px #fff, 6px 6px 0px #ffb3d9",
@@ -49,11 +49,14 @@ export default function Hero() {
         </div>
       </div>
 
-      <div>
+      <div className="absolute bottom-0 right-8 md:right-16 z-16">
         <img
           src="/img/img-chibi.png"
           alt="Gif de personaje"
-          className="w-56 h-auto drop-shadow-lg"
+          className="w-64 md:w-[800px] h-auto drop-shadow-2xl"
+          style={{
+            filter: "drop-shadow(0px 0px 12px rgba(255, 180, 220, 0.6))",
+          }}
         />
       </div>
     </section>
