@@ -9,12 +9,12 @@ export default function Contacto() {
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoad(true);
 
-    emailjs
-      .send(
+    try{
+       await emailjs.send(
         "service_90tsrwu",
         "template_0489v4k",
         {
@@ -24,16 +24,24 @@ export default function Contacto() {
         },
         "tBby89lt-Nlp0I6Mm",
       )
-      .then(() => {
+      await emailjs.send(
+        "service_90tsrwu",
+        "template_q132dtd",
+        {
+          email:form.email,
+          service: form.service,
+          details: form.details
+        },
+        "tBby89lt-Nlp0I6Mm"
+      )
         setSend(true);
         setLoad(false);
         setForm({ email: "", details: "", service: "" });
-        setTimeout(() => setSend(false), 4000);
-      })
-      .catch(() => {
+        setTimeout(() => setSend(false), 4000); 
+    }catch {
         setLoad(false);
         alert("Hubo un error, intentalo de nuevo.");
-      });
+    }
   };
 
   const inputStyle = {
