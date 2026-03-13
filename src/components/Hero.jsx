@@ -22,10 +22,14 @@ export default function Hero() {
         </h1>
 
         <p
-          className="text-xs leading-6 max-w-xs rounded-2xl px-4 py-3 text-center"
+          className="text-sm leading-6 max-w-xs rounded-2xl px-4 py-3 text-center"
           style={{ background: "rgba(255, 255, 255, 0.5)", color: "#a070c0" }}
         >
-          ola papuh ola mamuh
+          ¡Hola! mi apodo artistico es Tunna (amo las tunas) y me gusta el arte
+          en cualquier aspecto, este sitio esta basado para realizar comisiones.
+          Mandas tu solicitud y yo te respondere lo mas rapido posible! Mi
+          atencion total sera para ti y resolvere cualquier duda que surga!!
+          ♡⸜(˶˃ ᵕ ˂˶)⸝♡ <br /> <br /> ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦
         </p>
 
         {/* Hacer diseño gif aca */}

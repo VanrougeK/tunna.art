@@ -25,7 +25,12 @@ export default function Experiencia() {
       <p
         className="text-sm mb-8 rounded-2xl px-4 py-3 max-w-lg"
         style={{ background: "rgba(255, 255, 255, 0.4)", color: "#a070c0" }}
-      > desc aca
+      >
+        {" "}
+        Mi experiencia en el arte es variada. Me gusta probar nuevas tecnicas y
+        softwares, desde modelos 3d hasta arte tradicional sobre lienzos. Mi
+        habilidad abarca mas lo digital, el uso de softwares disponibles para pc
+        y dispositivos moviles.
       </p>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3 justify-items-center">

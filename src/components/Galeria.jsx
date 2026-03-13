@@ -6,8 +6,8 @@ export default function Galeria() {
     { id: 1, info: "Dibujo 1", img: "/img/Scarlett.png", type: "img" },
     { id: 2, info: "Dibujo 2", img: "/img/furro.png", type: "img" },
     { id: 3, info: "Dibujo 3", img: "/img/quackity.png", type: "img" },
-    { id: 4, info: "Dibujo 1", img: "/img/qsmp_2.png", type: "img" },
-    { id: 5, info: "Dibujo 2", img: "/img/mmmmm ok.png", type: "img" },
+    { id: 4, info: "Dibujo 4", img: "/img/qsmp_2.png", type: "img" },
+    { id: 5, info: "Dibujo 5", img: "/img/mmmmm ok.png", type: "img" },
     { id: 6, info: "Video 1", video: "/video/test.mp4", type: "video" },
   ];
   const [selected, setSelected] = useState(null)
