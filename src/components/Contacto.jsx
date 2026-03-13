@@ -38,9 +38,10 @@ export default function Contacto() {
         setLoad(false);
         setForm({ email: "", details: "", service: "" });
         setTimeout(() => setSend(false), 4000); 
-    }catch {
+    }catch(error) {
+      console.log("Error:", error)
         setLoad(false);
-        alert("Hubo un error, intentalo de nuevo.");
+        alert("Hubo un error, intentalo de nuevo." + error.text || error.message);
     }
   };
 
