@@ -3,7 +3,7 @@ import React from "react";
 export default function Hero() {
   return (
     <section
-      className=" relative flex flex-col md:flex-row justify-between items-center px-6 md:px-16 min-h-screen gap-8 overflow-hidden"
+      className=" relative flex flex-col md:flex-row justify-between items-center px-6 md:px-16 min-h-screen gap-8 overflow-hidden pb-48 md:pb-0"
       style={{
         background:
           "linear-gradient(135deg, #ffb3d9, #c9b3ff, #b3d9ff, #b3ffda)",
@@ -49,11 +49,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 right-8 md:right-16 z-16">
+      <div className=" bottom-0 right-0 left-0 flex justify-center md:justify-end md:right-16 md:left-auto z-10">
         <img
           src="/img/img-chibi.png"
           alt="Gif de personaje"
-          className="w-64 md:w-[800px] h-auto drop-shadow-2xl"
+          className="w-80 sm:w-96 md:w-[800px] h-auto drop-shadow-2xl float"
           style={{
             filter: "drop-shadow(0px 0px 12px rgba(255, 180, 220, 0.6))",
           }}

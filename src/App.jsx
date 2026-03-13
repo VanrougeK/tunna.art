@@ -11,7 +11,10 @@ import Juego from "./components/Juego";
 export default function App() {
 
   return (
-    <div className="bg-red-500 text-white p-4">
+    <div className="p-4" style={{
+        background:
+          "linear-gradient(135deg, #ffb3d9, #c9b3ff, #b3d9ff, #b3ffda)",
+      }}>
       <Navbar />
 
         <Hero />

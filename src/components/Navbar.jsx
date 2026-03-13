@@ -15,7 +15,7 @@ export default function Navbar() {
         style={{ background: "rgba(255, 255, 255, 0.3)" }}
       >
         <span
-          className="text-xl md:text-3xl font-bold"
+          className="text-xl md:text-7xl font-bold"
           style={{ color: "#a070c0" }}
         >
           ✦ tunna.art ✦
@@ -23,10 +23,10 @@ export default function Navbar() {
       </div>
 
       <div
-        className="px-3 py-1"
+        className="px-3 py-1 text-center"
         style={{ background: "rgba(255, 255, 255, 0.2)" }}
       >
-        <span className="text-xs" style={{ color: "#c090e0" }}>
+        <span className="text-lg" style={{ color: "#c090e0" }}>
           {" "}
           https://tunna.art{" "}
         </span>

@@ -5,19 +5,19 @@ export default function Servicios() {
   return (
     <section
       id="servicios"
-      className="px-12 py-10"
+      className="md:px-12 px-4 py-10"
       style={{
         background:
           "linear-gradient(135deg, #ffb3d9, #c9b3ff, #b3d9ff, #b3ffda)",
       }}
     >
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div
           className="rounded-2xl p-6"
           style={{ background: "rgba(255, 255, 255, 0.4" }}
         >
           <h2
-            className="text-xl font-bold mb-4"
+            className="text-lg md:text-xl font-bold mb-4"
             style={{ color: "#ff6eb4", textShadow: "2px 2px 0px #ffb3d9" }}
           >
             Servicios
@@ -32,7 +32,7 @@ export default function Servicios() {
           style={{ background: "rgba(255, 255, 255, 0.4" }}
         >
           <h2
-            className="text-xl font-bold mb-4"
+            className="text-lg md:text-xl font-bold mb-4"
             style={{ color: "#ff6eb4", textShadow: "2px 2px 0px #ffb3d9" }}
           >
             Reglas
