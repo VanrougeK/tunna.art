@@ -100,10 +100,10 @@ export default function Contacto() {
               style={inputStyle}
             >
               <option value="">Opciones</option>
-              <option value="op1">Icono de perfil</option>
-              <option value="op2">Banner</option>
-              <option value="op3">Pareja</option>
-              <option value="op4">Fecha especial</option>
+              <option value="Icono de perfil">Icono de perfil</option>
+              <option value="Banner">Banner</option>
+              <option value="Pareja">Pareja</option>
+              <option value="Fecha especial">Fecha especial</option>
             </select>
           </div>
         </div>
