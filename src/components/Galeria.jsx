@@ -10,6 +10,7 @@ export default function Galeria() {
     { id: 5, info: "Dibujo 2", img: "/img/mmmmm ok.png", type: "img" },
     { id: 6, info: "Video 1", video: "/video/test.mp4", type: "video" },
   ];
+  const [selected, setSelected] = useState(null)
   return (
     <section
       id="galeria"
@@ -36,6 +37,7 @@ export default function Galeria() {
             key={item.id}
             className="rounded-2xl overflow-hidden"
             style={{ background: "rgba(255, 255, 255, 0.4)" }}
+            onClick={() => item.type === "img" && setSelected(item)}
           >
             {item.type === "video" ? (
               <video
@@ -61,6 +63,26 @@ export default function Galeria() {
           </div>
         ))}
       </div>
+
+      {selected && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4"
+        style={{ background: "rgba(0, 0, 0, 0.7)"}}
+        onClick={() => setSelected (null)}>
+
+          <div className="relative max-w-3xl w-full"
+          onClick={e => e.stopPropagation()}>
+            <button
+            onClick={() => setSelected(null)}
+            className="absolute -top-4 -right-4 w-8 h-8 rounded-full font-bold text-sm z-10"
+            style={{ background: "#ff6eb4", color: "#fff"}}>𖦹</button>
+
+            <img src={selected.img} alt={selected.img} 
+            className="w-full h-auto rounded-2xl"
+            style={{ boxShadow: "0 8px 32px rgba(160, 112, 192, 0.4)"}}/>
+            <p className="text-center text-xs font-bold mt-3" style={{ color: "#fff"}}>{selected.info}</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
