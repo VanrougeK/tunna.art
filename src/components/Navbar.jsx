@@ -70,6 +70,15 @@ export default function Navbar() {
               Contacto
             </a>
           </li>
+          <li>
+            <a
+              href="https://github.com/VanrougeK/Proyecto-MT"
+              className="text-sm hover:underline"
+              style={{ color: "#fff" }}
+            >
+              Repo original
+            </a>
+          </li>
         </ul>
 
         <button
@@ -125,8 +134,16 @@ export default function Navbar() {
           >
             Contacto
           </a>
+          <a
+            href="https://github.com/VanrougeK/Proyecto-MT"
+            onClick={() => setOpen(false)}
+            className="text-sm"
+            style={{ color: "#fff" }}
+          >
+            Repo original
+          </a>
         </div>
       )}
     </nav>
-  )
+  );
 }
