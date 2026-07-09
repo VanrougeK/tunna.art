@@ -14,7 +14,6 @@ export default function Contacto() {
     setLoad(true);
 
     try{
-      throw new Error("Prueba  forzada CB-04"); //QUITAR DESPUES PERO EN FA
        await emailjs.send(
         "service_90tsrwu",
         "template_0489v4k",
@@ -40,7 +39,6 @@ export default function Contacto() {
         setForm({ email: "", details: "", service: "" });
         setTimeout(() => setSend(false), 4000); 
     }catch(error) {
-      error = {message: "No se pudo conectar con el servidor"}; //QUITAR DESPUES PERO EN FA
       console.log("Error:", error)
         setLoad(false);
         alert("Hubo un error, intentalo de nuevo." + error.text || error.message);
