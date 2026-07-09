@@ -25,8 +25,8 @@ export default function Contacto() {
         "tBby89lt-Nlp0I6Mm",
       )
       await emailjs.send(
-        "service_90tsrwu",
-        "template_q132dtd",
+        "service_FAKE123",
+        "template_FAKE123",
         {
           email:form.email,
           service: form.service,
